@@ -2,11 +2,6 @@ module.exports = {
     name: "AuthPlugin",
     register: async (server, options) => {
 
-        const auth = {
-            username: 'marees',
-            password: 'password'
-        };
-
         const users = {
             marees: {
                 username: 'marees',
