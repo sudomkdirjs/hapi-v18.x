@@ -32,7 +32,8 @@ module.exports = {
         await server.register(require('@hapi/basic'));
 
         server.auth.strategy('simple', 'basic', { validate });
-        server.auth.default('simple');
+
+        // server.auth.default('simple');
 
     
     }
