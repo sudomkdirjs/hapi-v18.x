@@ -2,14 +2,15 @@
   "name": "hapi-v18.x",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "start": "nodemon index.js",
+    "start": "nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@hapi/basic": "^5.1.1",
     "@hapi/hapi": "^18.4.0"
   },
   "devDependencies": {
