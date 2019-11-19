@@ -12,7 +12,7 @@ npm start
 
 # Refs:
 
-## https://hapi.dev/api/?v=16.8.1
+## https://hapi.dev/api/?v=18.4.0
 
 ## https://dstevens.io/getting-started-with-hapi-17
 
