@@ -1,10 +1,11 @@
-const AuthPlugin = require('./AuthPlugin');
-const CookieAuthPlugin = require('./CookieAuthPlugin');
 
-
-module.exports = [
-
-    AuthPlugin,
-    CookieAuthPlugin
-
-];
+module.exports = async (server) => {
+    await server.register([
+        {
+            plugin: require('./AuthPlugin'),
+            options: {
+                name: "marees"
+            }
+        }
+    ]);
+};

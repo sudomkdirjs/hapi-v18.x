@@ -1,6 +1,6 @@
 const Hapi = require("@hapi/hapi");
 const api = require("./api");
-const plugins = require("./plugins");
+const registerPlugins = require("./plugins");
 
 // define some constants
 const DEFAULT_HOST = "localhost";
@@ -19,7 +19,7 @@ const myServer = async () => {
 
     await server.register(api);
 
-    await server.register(plugins);
+    await registerPlugins(server);
   
     await server.start();
     

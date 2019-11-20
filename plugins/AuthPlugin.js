@@ -1,7 +1,8 @@
-module.exports = {
+exports.plugin = {
     name: "AuthPlugin",
     register: async (server, options) => {
 
+        console.log("handler--------------->", options.name)
         const users = {
             marees: {
                 username: 'marees',
@@ -33,7 +34,7 @@ module.exports = {
 
         server.auth.strategy('simple', 'basic', { validate });
 
-        // server.auth.default('simple');
+        server.auth.default('simple');
 
     
     }
