@@ -6,6 +6,12 @@ module.exports = async (server) => {
             options: {
                 name: "marees"
             }
+        },
+        {
+            plugin: require('./AuthenticationPlugin'),
+            options: {
+                "BASE_ROUTE_PREFIX": "/auth"
+            }
         }
     ]);
 };

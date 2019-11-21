@@ -2,7 +2,7 @@ exports.plugin = {
     name: "AuthPlugin",
     register: async (server, options) => {
 
-        console.log("handler--------------->", options.name)
+        console.log("AuthPlugin --------------->", options.name);
         const users = {
             marees: {
                 username: 'marees',
