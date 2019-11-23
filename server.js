@@ -1,5 +1,5 @@
 const Hapi = require("@hapi/hapi");
-const api = require("./api");
+
 const registerPlugins = require("./plugins");
 
 // define some constants
@@ -16,8 +16,6 @@ const myServer = async () => {
         port: parseInt(process.env.PORT, RADIX) || DEFAULT_PORT,
         app: {}
     });
-
-    await server.register(api);
 
     await registerPlugins(server);
   

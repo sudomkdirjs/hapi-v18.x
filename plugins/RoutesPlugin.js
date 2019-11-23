@@ -1,5 +1,5 @@
-module.exports = {
-    name: "ApiPlugin",
+exports.plugin = {
+    name: "RoutesPlugin",
     register: async (server, options) => {
 
         server.method('add', (a, b) => {
@@ -49,4 +49,4 @@ module.exports = {
         ]);
     
     }
-  }
+  };

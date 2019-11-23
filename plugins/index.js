@@ -7,10 +7,17 @@ module.exports = async (server) => {
                 name: "marees"
             }
         },
+
         {
             plugin: require('./AuthenticationPlugin'),
             options: {
                 "BASE_ROUTE_PREFIX": "/auth"
+            }
+        },
+
+        {
+            plugin: require('./RoutesPlugin'),
+            options: {
             }
         }
     ]);

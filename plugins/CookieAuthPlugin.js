@@ -1,4 +1,4 @@
-module.exports = {
+exports.plugin = {
     name: "CookieAuthPlugin",
     register: async (server, options) => {
 
