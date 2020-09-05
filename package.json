@@ -14,7 +14,7 @@
     "@hapi/boom": "^8.0.1",
     "@hapi/cookie": "^10.1.2",
     "@hapi/hapi": "^18.4.0",
-    "@hapi/hoek": "^8.5.0"
+    "@hapi/hoek": "^9.0.4"
   },
   "devDependencies": {
     "nodemon": "^1.19.4"
